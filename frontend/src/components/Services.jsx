@@ -22,9 +22,9 @@ const Services = () => {
                 <div className="grid mt-10 gap-6 lg:mt-16 md:grid-cols-2 xl:grid-cols-3">
                     {servicesItems.map(item => (
                         // Card
-                        <motion.div variants={variants.fadeInUp}
+                        <motion.div variants={variants.fadeIn}
                             key={item.id}
-                            className="bg-pink-600 px-6 py-16 rounded-xl services-card"
+                            className="bg-pink-600 px-6 py-16 rounded-xl services-card shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 space-y-6 cursor-pointer"
                         >
                             {/* icon */}
                             <div className="max-w-max mx-auto">
