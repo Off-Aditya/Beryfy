@@ -98,7 +98,7 @@ app.post("/api/contact", async (req, res) => {
             <!-- Footer -->
             <div style="background-color: #f1f1f1; padding: 15px; text-align: center; font-size: 12px; color: #777;">
                 <p><strong>Beryfy</strong> | www.beryfy.co.in</p>
-                <p>This message was generated automatically from the Beryfy website contact form.</p>
+                <p>This email was sent via the Beryfy website contact form.</p>
             </div>
         </div>
     `,
