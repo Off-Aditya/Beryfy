@@ -201,7 +201,6 @@ export const footerItems = [
             { label: "About us" },
             { label: "Contact us" },
             { label: "Careers" },
-            { label: "Press" },
         ],
     },
     {
@@ -210,8 +209,6 @@ export const footerItems = [
         links: [
             { label: "Features" },
             { label: "Pricing" },
-            { label: "News" },
-            { label: "Help desk" },
             { label: "Support" },
         ],
     },
@@ -231,7 +228,6 @@ export const footerItems = [
         links: [
             { label: "Privacy Policy" },
             { label: "Terms & Conditions" },
-            { label: "Return Policy" },
         ],
     },
 ];
