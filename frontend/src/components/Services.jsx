@@ -9,12 +9,12 @@ import * as variants from '../motion/animation';
 
 const Services = () => {
     return (
-        <section className="section" id="services">
+        <section className="section pb-24 lg:pb-40" id="services">
             <motion.div variants={variants.staggerContainer}
                 initial='hidden'
                 whileInView='show'
                 viewport={{ once: true }} 
-                className="container">
+                className="container mx-auto px-6">
                 {/* Title */}
                 <Title subtitle='Our services' title='Smart digital solutions for a modern world.' />
 

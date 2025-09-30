@@ -3,7 +3,7 @@ import ContactForm from './ContactForm'
 
 const Contact = () => {
     return (
-        <section id="contact" className="bg-[#161c20] pt-20 lg:pt-24 pb-10">
+        <section id="contact" className="bg-[#161c20] pt-24 lg:pt-32 pb-10">
             <div className="container">
                 <ContactForm />
             </div>

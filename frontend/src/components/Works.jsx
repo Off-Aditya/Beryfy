@@ -8,7 +8,7 @@ import * as variants from '../motion/animation';
 
 const Works = () => {
     return (
-        <section className="section py-20 lg:py-32 xl:py-40" id="works">
+        <section className="section py-20 lg:py-32 xl:py-40" id="">
             <motion.div
                 variants={variants.staggerContainer}
                 initial='hidden'

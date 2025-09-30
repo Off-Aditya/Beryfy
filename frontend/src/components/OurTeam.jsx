@@ -8,8 +8,8 @@ import * as variants from '../motion/animation';
 const OurTeam = () => {
     return (
         <section
-            className="relative overflow-hidden py-28 lg:py-40 bg-gradient-to-b from-[#5f3bf0] to-[#473bf0]"
-            aria-label="Our Team Section"
+            className="relative overflow-hidden pt-32 lg:pt-48 pb-32 lg:pb-48 bg-gradient-to-b from-[#5f3bf0] to-[#473bf0]"
+            aria-label="Our Team Section" id="about"
         >
             <motion.div
                 variants={variants.staggerContainer}
@@ -36,7 +36,7 @@ const OurTeam = () => {
                         <motion.div variants={variants.fadeIn}
                             key={item.id}
                             role="listitem"
-                            className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 hover:scale-[1.02] p-8"
+                            className="bg-white/95 backdrop-blur-sm rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-2 hover:scale-[1.02] p-8 cursor-pointer"
                         >
                             {/* <img
                                     src={item.image}
@@ -80,7 +80,7 @@ const OurTeam = () => {
                 src="/images/shape-6.svg"
                 alt=""
                 aria-hidden="true"
-                className="absolute top-0 left-0 w-[90%] max-w-[1600px] pointer-events-none"
+                className="absolute top-0 left-0 w-[120%] max-w-[1600px] pointer-events-none"
             />
         </section>
     );

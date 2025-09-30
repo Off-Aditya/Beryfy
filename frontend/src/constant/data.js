@@ -1,8 +1,11 @@
 import {
     RiInstagramLine,
+    RiMailLine,
     RiLinkedinBoxFill,
     RiGithubFill,
-} from "@remixicon/react";
+    RiMailFill,
+} from "@remixicon/react"
+
 
 export const navItems = [
     {
@@ -67,7 +70,7 @@ export const statsItems = [
     },
     {
         id: 2,
-        value: "0%",
+        value: "N/A",
         text: "Commitment to delivering creative, reliable, and quality solutions.",
     },
     {
@@ -141,31 +144,35 @@ export const teamsDataItems = [
         name: "Ankit Kumar",
         role: "Backend Developer",
         stack: ["JAVA", "Spring", "MySQL"],
+        linkedinUrl: "https://www.linkedin.com/in/ankit-kumar-9a011421a/"
     },
     {
         id: 2,
         name: "Aditya Singh",
         role: "Frontend Developer",
         stack: ["React", "Tailwind", "JavaScript"],
+        linkedinUrl: "https://www.linkedin.com/in/aditya-singh/"
     },
     {
-        
         id: 3,
         name: "Shailja Shukla",
         role: "Full Stack Developer",
         stack: ["React", "Node.js", "Express", "MongoDB"],
+        linkedinUrl: "https://www.linkedin.com/in/shailja-shukla-1baba7343/"
     },
     {
         id: 4,
         name: "Khyati Mathpal",
         role: "UI/UX Designer",
         stack: ["Figma", "Framer Motion", "Illustrator"],
+        linkedinUrl: "https://www.linkedin.com/in/khyati-mathpal-122858331/"
     },
     {
         id: 5,
         name: "Abhishek Tripathi",
         role: "SEO Consultant",
         stack: ["Google Analytics", "MOZ", "Sitebulb"],
+        linkedinUrl: "https://www.linkedin.com/in/abhishek-tripathi-869809265/"
     },
 ];
 
@@ -193,41 +200,95 @@ export const testimonialsItems = [
     },
 ];
 
+export const portfolioItems = [
+    {
+        id: 1,
+        image: "/images/img-3.png",
+        title: "E-commerce Platform",
+        category: "Web Development",
+        description: "Modern e-commerce solution with seamless user experience",
+        width: 318,
+        height: 332,
+        featured: true
+    },
+    {
+        id: 2,
+        image: "/images/img-2.png",
+        title: "Mobile App Design",
+        category: "UI/UX Design",
+        description: "Intuitive mobile application design",
+        width: 160,
+        height: 167,
+        featured: false
+    },
+    {
+        id: 3,
+        image: "/images/img-1.png",
+        title: "Brand Identity",
+        category: "Graphic Design",
+        description: "Complete brand identity package",
+        width: 200,
+        height: 200,
+        featured: false
+    },
+    {
+        id: 4,
+        image: "/images/img-2.png",
+        title: "Dashboard Design",
+        category: "UI/UX Design",
+        description: "Analytics dashboard with modern interface",
+        width: 200,
+        height: 200,
+        featured: false
+    }
+];
+
+export const mainProject = {
+    image: "/images/img-1.png",
+    title: "Premium Digital Solutions",
+    category: "Full Stack Development",
+    description: "A comprehensive digital platform that showcases our expertise in modern web technologies, featuring responsive design, seamless user experience, and cutting-edge functionality.",
+    technologies: ["React", "Node.js", "Express"],
+    liveUrl: "#",
+    githubUrl: "#"
+};
+
+
 export const footerItems = [
     {
         id: 1,
         title: "Company",
         links: [
-            { label: "About us" },
-            { label: "Contact us" },
-            { label: "Careers" },
+            { label: "About us", url: "#about" },
+            { label: "Contact us", url: "#contact" },
+            { label: "Careers", url: "#careers" },
         ],
     },
     {
         id: 2,
         title: "Product",
         links: [
-            { label: "Features" },
-            { label: "Pricing" },
-            { label: "Support" },
+            { label: "Features", url: "#features" },
+            { label: "Pricing", url: "/Pricing.pdf", external: true },
+            { label: "Support", url: "mailto:beryfy2@gmail.com" },
         ],
     },
     {
         id: 3,
         title: "Services",
         links: [
-            { label: "UI Design" },
-            { label: "Web Development" },
-            { label: "SEO for Business" },
-            { label: "Content Writing" },
+            { label: "UI Design", url: "#services" },
+            { label: "Web Development", url: "#services" },
+            { label: "SEO for Business", url: "#services" },
+            { label: "Content Writing", url: "#services" },
         ],
     },
     {
         id: 4,
         title: "Legal",
         links: [
-            { label: "Privacy Policy" },
-            { label: "Terms & Conditions" },
+            { label: "Privacy Policy", url: "/Privacy-Policy.pdf", external: true },
+            { label: "Terms & Conditions", url: "/Terms&Conditions.pdf", external: true },
         ],
     },
 ];
@@ -235,17 +296,26 @@ export const footerItems = [
 export const socialProfilesIcons = [
     {
         id: 1,
-        icon: RiInstagramLine,
-        name: "instagram",
+        icon: RiMailFill,
+        name: "gmail",
+        url: "mailto:beryfy2@gmail.com",
     },
     {
         id: 2,
         icon: RiLinkedinBoxFill,
         name: "linkedin",
+        url: "https://www.linkedin.com/company/beryfy/",
     },
     {
         id: 3,
         icon: RiGithubFill,
         name: "github",
+        url: "https://github.com/beryfy2/",
+    },
+    {
+        id: 4,
+        icon: RiInstagramLine,
+        name: "instagram",
+        url: "https://instagram.com/beryfy_tech/",
     },
 ];

@@ -1,16 +1,16 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
-import {motion} from 'motion/react';
+import { motion } from 'motion/react';
 import * as variants from '../motion/animation';
 
 const Hero = () => {
     return (
         <section className="py-32 lg:py-[150px_120px] bg-cyan-50/25 bg-pattern" id="home">
-            <motion.div 
-                variants={variants.staggerContainer} 
-                initial='hidden' 
-                whileInView='show' 
-                viewport={{once: true}}
+            <motion.div
+                variants={variants.staggerContainer}
+                initial='hidden'
+                whileInView='show'
+                viewport={{ once: true }}
                 className="container grid gap-14 lg:grid-cols-[1fr_0.8fr] lg:items-center">
                 {/* Content */}
                 <div className="text-center lg:text-left mx-auto">
@@ -23,16 +23,24 @@ const Hero = () => {
                     <motion.p variants={variants.fadeInUp} className="max-w-[460px] my-[14px_32px] max-lg:mx-auto">
                         We’re a passionate creative team, crafting websites, digital solutions, and innovative projects that help businesses stand out. With innovation and design at the core, we turn your ideas into reality.
                     </motion.p>
-                    <motion.button variants={variants.fadeInUp} className="primary-btn">Learn more</motion.button>
+                    <motion.button
+                        variants={variants.fadeInUp}
+                        className="primary-btn"
+                        onClick={() => {
+                            document.getElementById("why-us")?.scrollIntoView({ behavior: "smooth" });
+                        }}
+                    >
+                        Learn more
+                    </motion.button>
                 </div>
 
-                 {/* Banner */}
+                {/* Banner */}
                 <div className="relative mr-5">
                     {/* Hero figure */}
                     <motion.figure variants={variants.fadeIn} className="relative max-w-max mx-auto group">
                         {/* Image container */}
                         <div className="relative w-80 h-48 sm:w-96 sm:h-56 md:w-[28rem] md:h-64 lg:w-[30rem] lg:h-[20rem] rounded-3xl overflow-hidden shadow-2xl transition-all duration-500 group-hover:scale-105 group-hover:shadow-3xl">
-                            
+
                             <div className="absolute inset-0 bg-gradient-to-t from-black/10 to-transparent z-10"></div>
                             <img
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
